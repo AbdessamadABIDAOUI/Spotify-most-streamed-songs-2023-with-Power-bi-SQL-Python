@@ -86,3 +86,31 @@ This dataset contains a comprehensive list of the most famous songs of 2023 as l
 - **Temporal trends**: Identify any shifts in music attributes and preferences over time.
 - **Cross-platform presence**: Investigate how songs perform across different streaming services.
 
+## Python Script for Adding Image URLs to the Dataset
+
+The Python script provided enhances the dataset by adding image URLs for each song. This addition allows for a richer analysis and presentation, enabling visual representation of album covers or artist images alongside the statistical data. The script achieves this by interfacing with the Spotify API to fetch image URLs based on track and artist information. Here's how it works:
+
+### Key Features of the Script:
+
+- **Spotify API Integration**: Utilizes the Spotify API to search for songs by their name and artist(s), retrieving detailed information including image URLs.
+- **Data Enrichment**: Augments the existing dataset with a new column for image URLs, making the dataset not only informative in terms of numerical and categorical data but also visually engaging.
+- **Automated Processing**: Iterates over each row in the dataset, ensuring that every track is queried and, if found, its image URL is added to the dataset.
+- **Error Handling**: Implements checks to handle cases where a song might not be found on Spotify, ensuring the robustness of the script.
+
+### Usage Instructions:
+
+1. **API Credentials**: Obtain your Spotify API client ID and client secret by creating an app in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
+2. **Dataset Preparation**: Ensure your dataset is in a CSV format with columns for track name, artist(s) name, and other relevant information.
+3. **Script Execution**: Run the script, inputting your dataset file path and Spotify API credentials when prompted.
+4. **Output**: The script outputs an enhanced version of the dataset with an additional column for image URLs, ready for further analysis or visualization.
+
+### Prerequisites:
+
+- Python installed on your machine.
+- A Spotify Developer account to access API credentials.
+- Pandas library for data manipulation (install with `pip install pandas`).
+- Requests library for making API requests (install with `pip install requests`).
+
+This Python enhancement significantly increases the dataset's value, paving the way for more dynamic and visually appealing data presentations and analyses.
+
+
